@@ -20,7 +20,24 @@
 - We **can't run a file** if we have an imported library that is **not** used
 
 ---
-## The Main Function
+## Structure of a Go File
+
+Every single runnable Go file we write will always follow this exact top-to-bottom stack:
+
+```go
+package main // Tells Go this file is a runnable program, not a shared library
+
+import "fmt" // Pulls in the external "fmt" package from Go's standard library
+
+func main() { // The mandatory entry point function where execution starts
+	fmt.Println("Hello, World!")
+}
+```
+
+#### The fmt Package
+
+- A built-in library in Go's standard library used to **implement formatted input and output (I/O)**
+#### The Main Function
 
 - The **entry point** of the program
 - Go **always** looks for the `main()` function, so it needs to be named exactly `main` (case sensitive)
@@ -30,7 +47,7 @@
 #### Printf
 
 - Stands for "print formatted"
-- Similar to Python's `print()` and JavaScript's `console.log()`
+- Similar to Python's `print(f"...")` and C's `printf()`
 - It does **not** add a newline at the end
 - If you want the next output to go to a new line, you must explicitly type `\n`
 - You can use verbs like `%s` or `%d` to insert data into a template string
@@ -95,14 +112,14 @@ func main(){
 	y := 2.4805
 	z := "nada"
 	
-	fmt.Printf("%T", x)		// data type (int)
-	fmt.Printf("%v", x)		// actual value (3)
-	fmt.Printf("%b", x)		// binary value (11)
-	fmt.Printf("%e", y)		// scientific notation (2.480500e+00)
-	fmt.Printf("%f", y)		// floating point value (2.480500)
-	fmt.Printf("%s", z)		// string value (nada)
-	fmt.Printf("%.2f", y)	// value rounded to 2 decimal digits (2.48)
-	fmt.Printf("%10.2f", y)	// value rounded to 2 decimal digits and indented (          2.48)
+	fmt.Printf("%T", x)		// data type: int
+	fmt.Printf("%v", x)		// actual value: 3
+	fmt.Printf("%b", x)		// binary value: 11
+	fmt.Printf("%e", y)		// scientific notation: 2.480500e+00
+	fmt.Printf("%f", y)		// floating point value: 2.480500
+	fmt.Printf("%s", z)		// string text: nada
+	fmt.Printf("%.2f", y)	// floating percision: 2.48
+	fmt.Printf("%10.2f", y)	// width block padded:          2.48
 }
 ```
 
@@ -110,7 +127,7 @@ func main(){
 	- **Example** → `Printf("%T", x)` prints the type of `x`, in this case `int`
 
 - Use `%v` for a variable's actual value
-	- **Example** → `Printf("%T", x)` prints the value of  `x`, in this case `3`
+	- **Example** → `Printf("%v", x)` prints the value of  `x`, in this case `3`
 
 - Use `%b` for a variable's binary representation
 	- **Example** → `Printf("%b", x)` prints the binary value of  `x`, in this case `11`
@@ -127,8 +144,8 @@ func main(){
 - Use `%.2f` for getting the value of a variable rounded to a specific number of decimal digits (precision)
 	- **Example** → `Printf("%.2f", y)` prints the value of  `y` rounded to 2 decimal digits, in this case `2.48`
 
-- Use `%10.2f` for getting rounded value (as in the example above) but the answer will move 10 digits to the right
-	- **Example** → `Printf("%10.2f", y)` prints the value of  `y` rounded to 2 decimal digits and indented 10 digits, in this case `          2.48`
+- Use `%10.2f` for getting rounded value (as in the example above) but the _entire width_ of the output block will be exactly 10 characters wide, padded with spaces on the left
+	- **Example** → `Printf("%10.2f", y)` prints the value of  `y` rounded to 2 decimal digits and padded 10 digits to the left, in this case `          2.48`
 
 
 ---
