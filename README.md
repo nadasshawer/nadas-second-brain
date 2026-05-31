@@ -28,6 +28,8 @@ nadas-second-brain
  ├── terraform/
  ├── github-actions/
  └── architectural-logs/
+```
+
 ---
 
 ## 📡 Let's Connect
