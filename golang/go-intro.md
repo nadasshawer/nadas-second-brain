@@ -14,10 +14,10 @@
 ##### Build
 
 - Use the `go build` command to first compile the file into machine code (`.exe`)
-- Then you can run that `.exe` by typing its name in the terminal (`./demo.exe`)
+- Then run that `.exe` by typing its name in the terminal (`./demo.exe`)
 ##### Constraints
 
-- We **can't run a file** if we have an imported library that is **not** used
+- **Cannot run a file** if there is an imported library that is **not** used
 
 ---
 ## Structure of a Go File
@@ -36,11 +36,13 @@ func main() { // The mandatory entry point function where execution starts
 
 #### The fmt Package
 
-- A built-in library in Go's standard library used to **implement formatted input and output (I/O)**
+- A built-in library in Go's standard library
+- Used to implement formatted **input and output (I/O)**
 #### The Main Function
 
 - The **entry point** of the program
-- Go **always** looks for the `main()` function, so it needs to be named exactly `main` (case sensitive)
+- Go **always** looks for the `main()` function
+- The function needs to be named exactly `main` (case sensitive)
 
 ---
 ## Console Output
@@ -48,9 +50,10 @@ func main() { // The mandatory entry point function where execution starts
 
 - Stands for "print formatted"
 - Similar to Python's `print(f"...")` and C's `printf()`
-- It does **not** add a newline at the end
-- If you want the next output to go to a new line, you must explicitly type `\n`
-- You can use verbs like `%s` or `%d` to insert data into a template string
+- Does **not** add a newline at the end
+- To make the next output go on a new line, explicitly type `\n`
+- Allows the use of verbs like `%s` or `%d` to insert data into a template string
+
 ```go
 name := "Nada"
 age := 20
@@ -65,8 +68,9 @@ fmt.Printf("Next line!")
 
 - Stands for "print line"
 - Automatically inserts a space between arguments if neither of them is a string
-- **Always** adds a newline character (`\n`) at the very end of the text, so the next print statement starts on a fresh line
-- You cannot use format verbs (like `%d` or `%s`) to inject variables into specific places in a string
+- **Always** adds a newline character (`\n`) at the very end of the text
+- Cannot use format verbs (like `%d` or `%s`) to inject variables into specific places in a string
+
 ```go
 name := "Nada"
 age := 20
@@ -79,8 +83,8 @@ fmt.Println("Next line!")
 ```
 #### Sprintf
 
-- Creates a sting but will **not** print it to the console
-- Used when you want to create a string and store in some type of variable to use it later, maybe in a function
+- Creates a string without printing it to the console
+- Used to store a string in a variable for later use
 - **Example** → `y := fmt.Sprintf("%.2f%%", x)`
 
 ---
@@ -97,12 +101,15 @@ fmt.Println("Next line!")
 #### Explicit vs Implicit Type Assignment
 
 - `var x int = 5` or `var x int` → explicit
-	- only explicitly declare variables when you **don't actually want to assign it a value**
+	- Only explicitly declare variables when you **don't actually want to assign it a value**
 
 - `x := 5` → implicit
-	- only works when you assign a value to the variable
-	- use this 90% of the time
+	- Only works when a value is assigned to the variable
+	- Used 90% of the time
 #### Format Verbs
+
+Special placeholder tokens starting with a percent sign (`%`) used within the `fmt` package functions (such as `Printf`, `Sprintf`, and `Fprintf`) to define exactly how a value should be displayed.
+
 ```go
 package main
 import "fmt"
@@ -122,30 +129,5 @@ func main(){
 	fmt.Printf("%10.2f", y)	// width block padded:          2.48
 }
 ```
-
-- Use `%T` for a variable's type
-	- **Example** → `Printf("%T", x)` prints the type of `x`, in this case `int`
-
-- Use `%v` for a variable's actual value
-	- **Example** → `Printf("%v", x)` prints the value of  `x`, in this case `3`
-
-- Use `%b` for a variable's binary representation
-	- **Example** → `Printf("%b", x)` prints the binary value of  `x`, in this case `11`
-
-- Use `%e` for a variable's scientific notation representation
-	- **Example** → `Printf("%e", y)` prints the scientific notation of  `y`, in this case `2.480500e+00`
-
-- Use `%f` for a variable's floating point representation
-	- **Example** → `Printf("%f", y)` prints the floating point value of  `y`, in this case `2.480500`
-
-- Use `%s` for a variable's string representation
-	- **Example** → `Printf("%s", z)` prints the string value of  `z`, in this case `nada`
-
-- Use `%.2f` for getting the value of a variable rounded to a specific number of decimal digits (precision)
-	- **Example** → `Printf("%.2f", y)` prints the value of  `y` rounded to 2 decimal digits, in this case `2.48`
-
-- Use `%10.2f` for getting rounded value (as in the example above) but the _entire width_ of the output block will be exactly 10 characters wide, padded with spaces on the left
-	- **Example** → `Printf("%10.2f", y)` prints the value of  `y` rounded to 2 decimal digits and padded 10 digits to the left, in this case `          2.48`
-
 
 ---
