@@ -18,17 +18,16 @@ By tracking my journey completely in the open, I am building a traceable record 
 
 ```text
 nadas-second-brain
- ├── cs50\
- ├── golang\
- ├── docker\
- ├── kubernetes\
- ├── azure\
- ├── terraform\
- ├── github-actions\
- └── architectural-logs\
-
-```
-
+ ├── cs50/
+ │   └── c-intro
+ ├── golang/
+ │   └── go-intro
+ ├── docker/
+ ├── kubernetes/
+ ├── azure/
+ ├── terraform/
+ ├── github-actions/
+ └── architectural-logs/
 ---
 
 ## 📡 Let's Connect
@@ -36,4 +35,5 @@ nadas-second-brain
 I share comprehensive weekly recaps, architecture deep dives, and system configuration setups over on LinkedIn and DEV Community. Feel free to follow along, ask questions, or talk shop about everything infrastructure!
 
 👉 **[Follow me on LinkedIn](https://www.linkedin.com/in/nadasshawer)**
+<br>
 👉 **[Follow me on DEV Community](https://dev.to/nadasshawer)**
