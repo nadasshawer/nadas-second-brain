@@ -19,7 +19,6 @@
 
 - **Cannot run a file** if there is an imported library that is **not** used
 
----
 ## Structure of a Go File
 
 Every single runnable Go file we write will always follow this exact top-to-bottom stack:
@@ -44,7 +43,6 @@ func main() { // The mandatory entry point function where execution starts
 - Go **always** looks for the `main()` function
 - The function needs to be named exactly `main` (case sensitive)
 
----
 ## Console Output
 #### Printf
 
@@ -87,7 +85,6 @@ fmt.Println("Next line!")
 - Used to store a string in a variable for later use
 - **Example** → `y := fmt.Sprintf("%.2f%%", x)`
 
----
 ## Data Types & Variables
 #### Common Data Types
 
@@ -130,4 +127,4 @@ func main(){
 }
 ```
 
----
+
