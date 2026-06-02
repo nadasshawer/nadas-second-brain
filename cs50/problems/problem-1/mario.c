@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "cs50.h"
-#include "cs50.c"
+#include "../cs50.h"
+#include "../cs50.c"
 
 /** PROBLEM SET 1 - MARIO (C)
  * CATCHES:
