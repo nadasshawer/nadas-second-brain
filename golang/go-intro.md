@@ -84,6 +84,68 @@ func main() { // The mandatory entry point function where execution starts
 
 - The [[math-package|"math" package]] can be used to perform advanced mathematical operations
 
-## Conditionals
+## Conditions & Conditionals
 
-- 
+#### If Statements
+
+- If statements work the same way like in JS
+- No need to wrap the condition in `()` 
+
+```go
+x := 5
+
+if x > 5 {
+	...
+} else if x < 5{
+	...
+} else {
+	...
+}
+```
+
+### Switch Cases
+
+- No need to explicitly include the `break` keyword after each case
+- Go **automatically breaks** after the case is finished
+#### Traditional Switch Case
+
+```go
+a := 1
+
+// Normal switch statement (JS style)
+switch a {
+case 1:
+	...
+case 2:
+	...
+default:
+	...
+}
+```
+
+#### Naked Switch Case
+
+- Switch statements can be created without a condition after the `switch` keyword, this is called a **naked switch case**
+- To automatically **pass down** into the next case instead of breaking immediately, use the `fallthrough` keyword
+- `fallthrough` allows the next condition to run automatically, order of cases matters
+
+```go
+a := -1
+
+switch {
+case a < -1:
+	fmt.Printf("a is less than -1\n")
+	fallthrough
+case a < 0:
+	fmt.Printf("a is less than 0\n")
+	fallthrough
+case a < 1:
+	fmt.Printf("a is less than 1\n")
+default:
+	fmt.Printf("default")
+}
+
+// === Output ===
+// a is less than 0
+// a is less than 1
+```
