@@ -12,30 +12,36 @@ This repository serves as my public engineering journal and technical "second br
 
 By tracking my journey completely in the open, I am building a traceable record of my technical growth and sharing weekly discoveries with the broader infrastructure community.
 
----
-
 ## 📂 Repo Structure
 
 ```text
 nadas-second-brain
  ├── cs50/
- │   └── c-intro
+ │   ├── lecture-notes/
+ │   │   └── c-intro
+ │   └── problems/
+ │       └── problem-1/
+ │
+ ├── dsa/
+ │   └── dsa-intro
+ │
  ├── golang/
- │   └── go-intro
+ │   ├── fmt-package
+ │   ├── format-verbs
+ │   ├── go-intro
+ │   ├── math-package
+ │   └── strconv-package
+ │
  ├── docker/
  ├── kubernetes/
  ├── azure/
  ├── terraform/
- ├── github-actions/
- └── architectural-logs/
+ └── github-actions/
 ```
-
----
 
 ## 📡 Let's Connect
 
 I share comprehensive weekly recaps, architecture deep dives, and system configuration setups over on LinkedIn and DEV Community. Feel free to follow along, ask questions, or talk shop about everything infrastructure!
 
 👉 **[Follow me on LinkedIn](https://www.linkedin.com/in/nadasshawer)**
-<br>
 👉 **[Follow me on DEV Community](https://dev.to/nadasshawer)**
