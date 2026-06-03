@@ -16,10 +16,13 @@ for(int i = 1; i < height + 1; i++){
 ```
 #### Solution
 
-Since C doesn't have built-in string multiplication, we have to **explicitly loop** to print it multiple times
+Since C doesn't have built-in string multiplication, we have to **explicitly loop** to print it multiple times.
 
 ```c
 for(int i = 1; i < height + 1; i++){
-    printf("#" * i);      // will throw an error
+	for(int j = 0; j < i; j++){
+	    printf("#");
+	}
+    printf("\n");
 }
 ```
