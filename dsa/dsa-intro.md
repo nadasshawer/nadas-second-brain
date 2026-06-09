@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 #### Why Learn Data Structures & Algorithms?
 
 In a technical interview, it's not your knowledge of specific data structures or algorithms that's tested. It's your approach towards a problem.
@@ -27,3 +27,9 @@ In a technical interview, it's not your knowledge of specific data structures or
 5. Analyze the algorithm's complexity and identify **inefficiencies**, if any
 6. Apply the **right technique** to overcome the inefficiency
 	- Repeat steps 3-6
+
+## Error Handling
+#### Debugging Tips
+
+- Add clear print statements to see the output of the code
+- Always implement a brute force solution
