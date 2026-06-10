@@ -4,8 +4,8 @@
 #### Problem
 
 -  In C, we can't just perform dynamic string representation like in Python and some other languages
- * A char (e.g. `"#"`) in C is stored in memory as `'#'` and `'\0'`
- * When we use it in an expression, it evaluates to the char's **memory address (a pointer)**, not the char's actual value!
+- A char (e.g. `"#"`) in C is stored in memory as `'#'` and `'\0'`
+- When we use it in an expression, it evaluates to the char's **memory address (a pointer)**, not the char's actual value!
  
 So, when we try to multiply `"#"` by an integer like `3`, the compiler is trying to multiply the hexadecimal value of that pointer, so it crashes and throws a compilation error.
 
