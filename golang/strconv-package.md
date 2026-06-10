@@ -34,14 +34,13 @@ func main(){
 	fmt.Println(y, err)       // output: 0 strconv.Atoi: parsing "hello": invalid syntax
 }
 ```
-
 #### ParseInt()
 
-- Takes **3** parameters:
-	1. String to be converted
-	2. Base
-	3. Bit size (number of bits this integer will be stored in)
-		- Adding `0` uses the default `int64`
+**Takes 3 parameters:**
+1. String to be converted
+2. Base
+3. Bit size (number of bits this integer will be stored in)
+	- Adding `0` uses the default `int64`
 
 ```go
 func main(){

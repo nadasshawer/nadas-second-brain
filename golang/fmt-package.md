@@ -1,4 +1,4 @@
-## The fmt Package
+## The "fmt" Package
 
 A built-in library in Go library for implementing formatted **input and output (I/O)**.
 #### Syntax
