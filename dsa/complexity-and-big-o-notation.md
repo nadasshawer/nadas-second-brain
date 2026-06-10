@@ -1,4 +1,4 @@
-## Introduction
+## Algorithm Complexity
 #### Analysis of Algorithms
 
 The field of study concerned with finding the amount of time, space or other resources required to complete the execution of computer programs.
@@ -15,6 +15,6 @@ The process of figuring out **the best algorithm** to solve a given problem.
 - **Example** → the highest possible time/space taken by the program/algorithm to process an input
 #### Big O Notation
 
-- The **worst-case complexity** is often expressed using the Big O notation
+- The **worst-case complexity** is often expressed using the **Big O notation**
 - In the Big O, we drop **fixed constants** and **lower powers** of variables to capture the ==trend of relationship== between the *size of the input* and the *complexity* of the algorithm
 - **Example** → if the complexity of the algorithm is `cN^3 + dN^2 + eN + f`, in the Big O notation it is expressed as **O(N^3)**
