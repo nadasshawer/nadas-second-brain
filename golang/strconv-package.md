@@ -3,9 +3,9 @@
 A built-in Go package used to convert **strings** to different data types.
 #### Structure
 
-- **It returns 2 things:**
-	- the converted value of the string
-	- the error (if any)
+**Returns 2 things:**
+1. The converted value of the string
+2. The error (if any)
 #### Syntax
 
 - Use `strconv.` followed by the function's name
