@@ -57,13 +57,13 @@ A **pointer** is an **address variable** that is meant for storing the address o
 - No matter what the data type of the pointer is, each pointer takes the **same amount of memory** → 8 bytes (on latest compilers)
 #### Why Access Indirectly?
 
-- [[heap|Heap]] memory is external to the program, outside of it
+- [[Heap]] memory is external to the program, outside of it
 - Thus, the program can't access it directly
 - To access it, a pointer is used
 #### Usages
 
 - Accessing the resources that are **outside** the program
-	- [[heap|Heap]] memory
+	- [[Heap]] memory
 	- Hard disk files
 	- Keyboards, monitors, internet, etc.
 - Parameter passing
@@ -84,7 +84,7 @@ cout << *p;     // dereferencing (actual value)
 
 Normally, when a variable like `int x;` is created, the computer automatically allocates memory for it on the [[stack-memory|Stack]]. This memory is managed for us and disappears when our function ends.
 
-However, sometimes we don't know how much memory we will need until the program is actually running. `malloc` bypasses the [[stack-memory|Stack]] and goes straight to the [[heap|Heap]] to grab a custom-sized chunk of data that we control completely.
+However, sometimes we don't know how much memory we will need until the program is actually running. `malloc` bypasses the [[stack-memory|Stack]] and goes straight to the [[Heap]] to grab a custom-sized chunk of data that we control completely.
 #### Allocation
 
 ```cpp
