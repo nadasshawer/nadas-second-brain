@@ -40,3 +40,26 @@ In a technical interview, it's not your knowledge of specific data structures or
 5. Analyze the algorithm's complexity and identify **inefficiencies**, if any
 6. Apply the **right technique** to overcome the inefficiency
 	- Repeat steps 3-6
+ 
+## Topics Covered
+
+#### Physical Data Structures
+
+Define how data is physically stored and arranged in memory.
+
+- [[arrays|Arrays]]
+- [[matrcies|Matrices]]
+- [[linked-lists|Linked Lists]]
+#### Logical Data Structures
+
+Define how the data can be utilized.
+
+- [[stack|Stack]]
+- [[queues|Queues]]
+- [[trees|Trees]]
+- [[graph|Graph]]
+- [[hashing|Hashing]]
+#### Algorithms & Tools
+
+- [[recursion|Recursion]]
+- [[sorting|Sorting]]
