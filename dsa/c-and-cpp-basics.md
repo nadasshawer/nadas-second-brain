@@ -26,3 +26,30 @@ cout << sizeof(A);      // 28
 
 ## Structure
 
+A **structure** is a collection of **related** data members of a **similar type** under one name.
+
+- When declaring a structure inside a function, that structure belongs to the **stack** of that function in memory
+- Inside structures, [[padding]] of memory is done
+#### Definition vs. Initialization vs. Declaration
+
+```cpp
+// Defination
+struct Rectangle                      // not yet created in memory and does NOT occupy space
+{
+	int len;
+	int width;
+};
+
+int main()
+{
+	struct Rectangle r;               // declaration (created in memory and occupies space)
+	r.len = 10;
+	r.width = 5;
+	
+	struct Rectangle r = {10, 5}      // initialization
+}
+```
+
+## Pointers
+
+49:19

@@ -33,10 +33,8 @@ nadas-second-brain
  │   └── strconv-package
  │
  ├── docker/
- ├── kubernetes/
- ├── azure/
- ├── terraform/
- └── github-actions/
+ ├── aws/
+ └── ci-cd/
 ```
 
 ## 📡 Let's Connect
@@ -46,3 +44,5 @@ I share comprehensive weekly recaps, architecture deep dives, and system configu
 👉 **[Follow me on LinkedIn](https://www.linkedin.com/in/nadasshawer)**
 <br>
 👉 **[Follow me on DEV Community](https://dev.to/nadasshawer)**
+<br>
+👉 **[Follow me on LeetCode](https://leetcode.com/nadasshawer)**
