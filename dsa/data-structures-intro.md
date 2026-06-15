@@ -54,7 +54,7 @@ Define how data is physically stored and arranged in memory.
 
 Define how the data can be utilized.
 
-- [[stack|Stack]]
+- [[stack-memory|Stack]]
 - [[queues|Queues]]
 - [[trees|Trees]]
 - [[graph|Graph]]

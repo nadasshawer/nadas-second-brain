@@ -23,3 +23,4 @@ int main
 | **Bad Struct Layout (More Padding)**                                                                                                    | **Optimized Struct Layout (Less Padding)**                                                                           |
 | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | `struct Bad { char a; // 1 byte // 3 bytes padding int b; // 4 bytes char c; // 1 byte // 3 bytes padding }; // Total Size = 12 bytes!` | `struct Good { int b; // 4 bytes char a; // 1 byte char c; // 1 byte // 2 bytes padding }; // Total Size = 8 bytes!` |
+
