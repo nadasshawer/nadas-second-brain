@@ -20,7 +20,7 @@
 - **Cannot run a file** if there is an imported library that is **not** used
 #### Console Output
 
-- The [[fmt-package|"fmt" Package]] is used to print output to the console
+- The ["fmt" Package](fmt-package.md) is used to print output to the console
 
 ## Structure of a Go File
 
@@ -61,18 +61,18 @@ func main() { // The mandatory entry point function where execution starts
 	- Used 90% of the time
 #### Combining Strings With Variables
 
-- Use [[format-verbs|format verbs]] to inject variables into formatted strings
+- Use [format verbs](format-verbs.md) to inject variables into formatted strings
 - Works similar to Pythons fstring (`print(f"Some text and a {variable}!")`)
 #### Converting Different Data Types
 
 - Different Go libraries can be used to convert to different data types
-- Use the [[strconv-package|strconv library]] to convert **strings** to different data types
+- Use the [strconv library](strconv-package.md) to convert **strings** to different data types
 
 ## Arithmetic Operators
 
 - Go contains the same basic operators like JS (`+`, `-`, `*` , `/` , `--`, `++`)
 - It does **not** contain an exponent operator (`**`)
-	- Use the [[math-package#The Power Function|pow function]]
+	- Use the [](math-package.md#The%20Power%20Function|pow%20function)
 - The type you get *out* is always the **same** as the type you put *in*
 #### Constraints
 
@@ -82,7 +82,7 @@ func main() { // The mandatory entry point function where execution starts
 	- This avoids "weird" results because it preserves the value of the variable without trimming any bits in an *overflow*
 #### Packages
 
-- The [[math-package|"math" package]] can be used to perform advanced mathematical operations
+- The ["math" package](math-package.md) can be used to perform advanced mathematical operations
 
 ## Conditions & Conditionals
 

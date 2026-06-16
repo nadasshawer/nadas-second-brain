@@ -5,7 +5,7 @@
 Thus, a **data structure** is a way to organize data in a computer, so that it can be used efficiently.
 
 **We talk about data structures as:**
-1. Mathematical/logical models **or** [[abstract-data-types|Abstract Data Types (ADTs)]]
+1. Mathematical/logical models **or** [Abstract Data Types (ADTs)](abstract-data-types.md)
 2. Implementations
 #### Examples of Data Structures in Daily Life
 
@@ -47,19 +47,19 @@ In a technical interview, it's not your knowledge of specific data structures or
 
 Define how data is physically stored and arranged in memory.
 
-- [[arrays|Arrays]]
-- [[matrcies|Matrices]]
-- [[linked-lists|Linked Lists]]
+- [Arrays](arrays.md)
+- [Matrices](matrcies)
+- [Linked Lists](linked-lists)
 #### Logical Data Structures
 
 Define how the data can be utilized.
 
-- [[stack-memory|Stack]]
-- [[queues|Queues]]
-- [[trees|Trees]]
-- [[graph|Graph]]
-- [[hashing|Hashing]]
+- [Stack](stack-memory.md)
+- [Queues](queues)
+- [Trees](trees)
+- [Graph](graph)
+- [Hashing](hashing)
 #### Algorithms & Tools
 
-- [[recursion|Recursion]]
-- [[sorting|Sorting]]
+- [Recursion](recursion)
+- [Sorting](sorting)

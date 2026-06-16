@@ -5,7 +5,7 @@ An **Abstract Data Type (ADT)** is a blueprint or a mathematical model for a dat
 They define *data and operations* but no *implementation*.
 #### Examples
 
-- [[lists-as-adt|Lists]]
+- [Lists](lists-as-adt.md)
 - Arrays
 - Stacks
 - Queues
