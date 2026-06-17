@@ -200,6 +200,23 @@ int main() {
 - Should be used carefully, not always
 - A reference **must** always refer to a real variable, it can never be null
 
-## Arrays as Parameters
+#### Arrays as Parameters
 
-2:18:40
+- Arrays can **only** be passed by **address**, not by value
+
+```cpp
+void func(int *A, n){}        // a pointer that can point to any int; here it's pointing to the array we'll pass
+void func(int A[], n){}       // a pointer pointing specifically to an array
+
+int main()
+{
+	int A[5] = {1, 2, 3, 4, 5};
+	func(A, 5);
+}
+```
+#### Structures As Parameters
+
+- Structures can be passed by **value** and by **reference**
+#### Structures & Functions
+
+3:01:26
