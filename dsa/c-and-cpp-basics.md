@@ -217,6 +217,26 @@ int main()
 #### Structures As Parameters
 
 - Structures can be passed by **value** and by **reference**
-#### Structures & Functions
 
-3:01:26
+## Object Orientation
+
+#### Class Templates
+
+Template classes are generic classes that support **any data type**.
+
+```cpp
+template <class T>
+class Box {};
+
+template <class T>
+void Box<T>::updateData(T newValue) {}
+
+int main() {
+    Box<int> intBox(123);
+    return 0;
+}
+```
+
+
+
+
