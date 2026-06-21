@@ -77,15 +77,11 @@ int *p;         // declaration
 p = &a;         // assignment or initialization (address)
 cout << *p;     // dereferencing (actual value)
 ```
-#### Pointer To Structure
-
-
-
-### Dynamic Memory Allocation
+### [[memory-allocation|Memory Allocation]]
 #### `malloc` Function
 
 - `malloc` → **M**emory **Alloc**ation
-- It's a C function used to allocate dynamic memory in the [Heap](heap.md)
+- It's a C function used to allocate *dynamic* memory in the [Heap](heap.md)
 - It returns a **void pointer**
 
 Normally, when a variable like `int x;` is created, the computer automatically allocates memory for it on the [Stack](stack-memory.md). This memory is managed for us and disappears when our function ends.
@@ -109,8 +105,8 @@ Deleting of variables in memory after they're finished working with.
 int main()
 {
 	int *p;
-	delete [ ] p;           // C code
-	free(p);                // C++ code
+	delete [] p;           // C code
+	free(p);               // C++ code
 }
 ```
 #### Arrays & Pointers

@@ -2,7 +2,7 @@
 
 **Data Structures** are a way to organize data. The way we store, organize, and manage data matters a lot because it affects the **efficiency** of computer machines.
 
-Thus, a **data structure** is a way to organize data in a computer, so that it can be used efficiently.
+Thus, a **data structure** is a way to organize data in a computer's **main memory**, so that it can be used efficiently.
 
 **We talk about data structures as:**
 1. Mathematical/logical models **or** [Abstract Data Types (ADTs)](abstract-data-types.md)
@@ -43,16 +43,12 @@ In a technical interview, it's not your knowledge of specific data structures or
  
 ## Topics Covered
 
-#### Physical Data Structures
-
-Define how data is physically stored and arranged in memory.
+#### [[data-structures-types#Physical Data Structures|Physical Data Structures]]
 
 - [Arrays](arrays.md)
 - [Matrices](matrcies)
 - [Linked Lists](linked-lists)
-#### Logical Data Structures
-
-Define how the data can be utilized.
+#### [[data-structures-types#Logical Data Structures|Logical Data Structures]]
 
 - [Stack](stack-memory.md)
 - [Queues](queues)
