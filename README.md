@@ -18,20 +18,9 @@ By tracking my journey completely in the open, I am building a traceable record 
 nadas-second-brain
  ├── cs50/                       # Harvard CS50 Course
  │   ├── lecture-notes/
- │   │   └── c-intro
  │   └── problems/
- │       └── problem-1/
- │
  ├── dsa/                        # Data Structures & Algorithms in C/C++
- │   └── dsa-intro
- │
  ├── golang/                     # Go Programming Language
- │   ├── fmt-package
- │   ├── format-verbs
- │   ├── go-intro
- │   ├── math-package
- │   └── strconv-package
- │
  ├── docker/
  ├── aws/
  └── ci-cd/
