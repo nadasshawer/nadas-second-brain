@@ -77,7 +77,7 @@ int *p;         // declaration
 p = &a;         // assignment or initialization (address)
 cout << *p;     // dereferencing (actual value)
 ```
-### [[memory-allocation|Memory Allocation]]
+### [Memory Allocation](memory-allocation.md)
 #### `malloc` Function
 
 - `malloc` → **M**emory **Alloc**ation

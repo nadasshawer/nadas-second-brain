@@ -16,11 +16,11 @@ The process of figuring out **the best algorithm** to solve a given problem.
 #### Big O Notation
 
 - The **worst-case complexity** is often expressed using the **Big O notation**
-- In the Big O, we drop **fixed constants** and **lower powers** of variables to capture the ==trend of relationship== between the *size of the input* and the *complexity* of the algorithm
+- In the Big O, we drop **fixed constants** and **lower powers** of variables to capture the trend of relationship between the *size of the input* and the *complexity* of the algorithm
 - **Example** → if the complexity of the algorithm is `cN^3 + dN^2 + eN + f`, in the Big O notation it is expressed as **O($n^3$)**
 #### Time Complexity
 
-**Time complexity** is a way to measure ==how fast== an algorithm runs as the amount of input data grows.
+**Time complexity** is a way to measure how fast an algorithm runs as the amount of input data grows.
 
 - **O($1$) → Constant Time**
 	- No loops
