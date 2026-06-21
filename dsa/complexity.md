@@ -22,20 +22,20 @@ The process of figuring out **the best algorithm** to solve a given problem.
 
 **Time complexity** is a way to measure how fast an algorithm runs as the amount of input data grows.
 
-- **O($1$) → Constant Time**
+- **$O(1)$ → Constant Time**
 	- No loops
 	- Code executes sequentially in a fixed number of steps, no matter how big the input is
     
-- **O($log n$) → Logarithmic Time** 
+- **$O(log n)$ → Logarithmic Time** 
 	- One loop where the variable is **multiplied or divided**
 	- The problem size cuts in half each step (like Binary Search)
 	- **Ex:** `i = i / 2`
     
-- **O($n$) → Linear Time** 
+- **$O(n)$ → Linear Time** 
 	- One standard loop that steps forward linearly
 	- It checks every item exactly once
 	- **Ex:** `i++` or `i--`
     
-- **O($n^2$) → Quadratic Time**
+- **$O(n^2)$ → Quadratic Time**
 	- **Nested loops** where both loops depend on the input size and increment linearly
 	- **Ex:** a `i++` loop containing a `j++` loop
