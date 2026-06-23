@@ -22,6 +22,8 @@ nadas-second-brain
  ├── dsa/                        # Data Structures & Algorithms in C/C++
  ├── golang/                     # Go Programming Language
  ├── docker/
+ ├── postgresql/
+ ├── backend/
  ├── aws/
  └── ci-cd/
 ```
