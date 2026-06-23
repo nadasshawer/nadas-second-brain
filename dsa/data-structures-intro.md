@@ -57,5 +57,5 @@ In a technical interview, it's not your knowledge of specific data structures or
 - [Hashing](hashing)
 #### Algorithms & Tools
 
-- [Recursion](recursion)
+- [Recursion](recursion-basics.md)
 - [Sorting](sorting)

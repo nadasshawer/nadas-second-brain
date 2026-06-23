@@ -6,7 +6,7 @@
 #### Server vs Client
 
 - **Server** → runs in the background on your machine (Windows service, e.g. `postgresql-x64-18`)
-- **Client (`psql`)** → terminal program that sends SQL to the server — see [[psql]] for commands
+- **Client (`psql`)** → terminal program that sends SQL to the server — see [psql](psql.md) for commands
 - Think: server = kitchen, `psql` = ordering at the counter
 #### Key Terms
 
@@ -16,7 +16,7 @@
 - **Superuser** → admin role with full control (default: `postgres`)
 #### Dev Setup Best Practices
 
-On Windows, follow [[local-setup]] to install the server and create a database + app user.
+On Windows, follow [local-setup](local-setup.md) to install the server and create a database + app user.
 
 - **Separate database per project** → isolates data from other work on the same server
 - **Separate app user** → application gets limited permissions; not full admin access

@@ -1,6 +1,6 @@
 ## Express + TypeScript API
 
-Reference layout for a Node.js REST API (Express, Prisma, Jest). Pair with [[local-setup|local PostgreSQL setup]] when wiring `DATABASE_URL`.
+Reference layout for a Node.js REST API (Express, Prisma, Jest). Pair with [local PostgreSQL setup](local-setup.md) when wiring `DATABASE_URL`.
 #### Root Files
 
 - **`package.json`** → project metadata, npm scripts, dependencies

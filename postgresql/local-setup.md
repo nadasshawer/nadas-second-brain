@@ -1,6 +1,6 @@
 ## Local Setup (Windows)
 
-Install PostgreSQL locally and create a dev database + app user. Assumes [[basics|PostgreSQL basics]]; connect with [[psql]] once the server is running.
+Install PostgreSQL locally and create a dev database + app user. Assumes [PostgreSQL basics](basics.md); connect with [psql](psql.md) once the server is running.
 #### Install
 
 - Download from [postgresql.org/download/windows](https://www.postgresql.org/download/windows/)
@@ -8,7 +8,7 @@ Install PostgreSQL locally and create a dev database + app user. Assumes [[basic
 - Default port → `5432`
 #### PATH Fix
 
-If [[psql]] is not recognized, add the PostgreSQL `bin` folder to User PATH:
+If [psql](psql.md) is not recognized, add the PostgreSQL `bin` folder to User PATH:
 
 ```powershell
 # Example path (version may differ)

@@ -5,73 +5,18 @@
 **Recursion has 2 phases:**
 1. Ascending phase (calling)
 2. Descending phase (returning)
-### Tail Recursion (Calling) Example
 
-In `fun1`, the recursive call is the **very last operation** executed in the function.
-#### Code
+## Types Of Recursion
 
-```cpp
-void fun1(int n) 
-{
-    if (n > 0) 
-    {
-        printf("%d ", n);
-        fun1(n - 1);
-    }
-}
-
-// For fun1(3) -> Output: 3 2 1
-// Time: O(n)
-```
-#### Recursive Tree
-
-```txt
-       fun1(3)
-       /     \
-      3      fun1(2)
-             /     \
-            2      fun1(1)
-                   /     \
-                  1      fun1(0)
-                            |
-                            X (Base case: 0 > 0 is false)
-```
-### Head Recursion (Returning) Example
-
-In `fun2`, the recursive call is the **first operation** executed inside the conditional block.
-#### Code
-
-```cpp
-void fun2(int n) 
-{
-    if (n > 0) 
-    {
-        fun2(n - 1);
-        printf("%d ", n);
-    }
-}
-
-// For fun2(3) -> Output: 1 2 3
-// Time: O(n)
-```
-
-#### Recursive Tree
-
-```txt
-        fun2(3)
-         /     \
-     fun2(2)    3  (Prints last)
-     /     \
- fun2(1)    2     (Prints second)
- /     \
-fun2(0)    1      (Prints first)
-   |
-   X (Base case: 0 > 0 is false, returns)
-```
+1. [Tail Recursion](tail-recursion.md)
+2. [Head Recursion](head-recursion.md)
+3. [Tree Recursion](tree-recursion)
+4. [Indirect Recursion](indirect-recursion)
+5. [Nested Recursion](nested-recursion)
 
 ## The Stack
 
-Every single time a function calls itself, a new **activation record** (also known as a **stack frame**) is pushed onto the call [[stack-memory|Stack]].
+Every single time a function calls itself, a new **activation record** (also known as a **stack frame**) is pushed onto the call [Stack](stack-memory.md).
 
  For each call, the stack frame keeps track:
 - **Local variables** (like `int x`)
@@ -181,3 +126,4 @@ int fun3(int n)
 |===========================|               |===========================|
  FINAL RETURN VALUE: 25
 ```
+

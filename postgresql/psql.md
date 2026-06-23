@@ -1,6 +1,6 @@
 ## psql
 
-`psql` is the terminal client for PostgreSQL — it sends SQL to the server ([[basics|concepts]]). Use [[local-setup]] if you still need install, database, and user setup.
+`psql` is the terminal client for PostgreSQL — it sends SQL to the server ([concepts](basics.md)). Use [local-setup](local-setup.md) if you still need install, database, and user setup.
 #### Connect
 
 ```powershell
