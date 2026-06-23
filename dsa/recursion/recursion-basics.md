@@ -10,7 +10,7 @@
 
 1. [Tail Recursion](tail-recursion.md)
 2. [Head Recursion](head-recursion.md)
-3. [Tree Recursion](tree-recursion)
+3. [Tree Recursion](tree-recursion.md)
 4. [Indirect Recursion](indirect-recursion)
 5. [Nested Recursion](nested-recursion)
 
