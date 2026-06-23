@@ -16,11 +16,11 @@ By tracking my journey completely in the open, I am building a traceable record 
 
 ```text
 nadas-second-brain
- ├── cs50/                       # Harvard CS50 Course
+ ├── cs50/                       
  │   ├── lecture-notes/
  │   └── problems/
- ├── dsa/                        # Data Structures & Algorithms in C/C++
- ├── golang/                     # Go Programming Language
+ ├── dsa/                        
+ ├── golang/                     
  ├── docker/
  ├── postgresql/
  ├── backend/
