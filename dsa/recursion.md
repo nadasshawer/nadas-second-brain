@@ -20,14 +20,7 @@ void fun1(int n)
     }
 }
 
-int main() 
-{
-    int x = 3;
-    fun1(x);
-    return 0;
-}
-
-// Output: 3 2 1
+// For fun1(3) -> Output: 3 2 1
 // Time: O(n)
 ```
 #### Recursive Tree
@@ -58,14 +51,7 @@ void fun2(int n)
     }
 }
 
-int main() 
-{
-    int x = 3;
-    fun2(x);
-    return 0;
-}
-
-// Output: 1 2 3
+// For fun2(3) -> Output: 1 2 3
 // Time: O(n)
 ```
 
@@ -133,4 +119,65 @@ So, the **Recurrence Relation** for the code is:
 $$T(n) = T(n-1) + 2 \quad \text{for } n > 0$$
 
 $$T(0) = 1 \quad \text{for } n = 0$$
+## Static Variables in Recursion
 
+- Static variables are created inside the code section in memory
+- They don't get created every time the function is called
+- They have a **single** copy in memory
+- All the calls for that function will use the same copy of the static variable
+#### Code
+
+```cpp
+int fun3(int n) 
+{
+    static int x = 0;       // Allocated ONCE in global memory, NOT on the stack!
+    if (n > 0) 
+    {
+        x++;                // Increments the SINGLE shared copy of x
+        return fun(n - 1) + x; 
+    }
+    return 0;
+}
+
+// For fun3(5) -> Output: 1 2 3
+```
+#### Winding the Stack
+
+```txt
+        STACK MEMORY                           GLOBAL / STATIC MEMORY
+|===========================|               |===========================|
+| fun(5) Frame: [n = 5]     | ------------> | x changes: 0 -> 1         |
+|---------------------------|               |---------------------------|
+| fun(4) Frame: [n = 4]     | ------------> | x changes: 1 -> 2         |
+|---------------------------|               |---------------------------|
+| fun(3) Frame: [n = 3]     | ------------> | x changes: 2 -> 3         |
+|---------------------------|               |---------------------------|
+| fun(2) Frame: [n = 2]     | ------------> | x changes: 3 -> 4         |
+|---------------------------|               |---------------------------|
+| fun(1) Frame: [n = 1]     | ------------> | x changes: 4 -> 5 🛑      |
+|---------------------------|               |===========================|
+| fun(0) Frame: [n = 0]     | Base Case! Does not increment x. Returns 0.
+|===========================|
+```
+#### Unwinding the Stack
+
+```txt
+        STACK MEMORY                           GLOBAL / STATIC MEMORY
+|===========================|               |===========================|
+| fun(1) Frame returns:     |               |                           |
+|   fun(0) + x  =>  0 + 5   | ------------> | Read current value: [5]   |
+|---------------------------|               |---------------------------|
+| fun(2) Frame returns:     |               |                           |
+|   fun(1) + x  =>  5 + 5   | ------------> | Read current value: [5]   |
+|---------------------------|               |---------------------------|
+| fun(3) Frame returns:     |               |                           |
+|   fun(2) + x  => 10 + 5   | ------------> | Read current value: [5]   |
+|---------------------------|               |---------------------------|
+| fun(4) Frame returns:     |               |                           |
+|   fun(3) + x  => 15 + 5   | ------------> | Read current value: [5]   |
+|---------------------------|               |---------------------------|
+| fun(5) Frame returns:     |               |                           |
+|   fun(4) + x  => 20 + 5   | ------------> | Read current value: [5]   |
+|===========================|               |===========================|
+ FINAL RETURN VALUE: 25
+```
