@@ -129,5 +129,7 @@ void fun1(int n) {
 ```
 
 So, the **Recurrence Relation** for the code is:
-$$T(n) = T(n-1) + 2 \quad \text{for } n > 0$$$$T(0) = 1 \quad \text{for } n = 0$$
+$$T(n) = T(n-1) + 2 \quad \text{for } n > 0$$
+
+$$T(0) = 1 \quad \text{for } n = 0$$
 
