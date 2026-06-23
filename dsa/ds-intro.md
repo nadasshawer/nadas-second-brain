@@ -43,12 +43,12 @@ In a technical interview, it's not your knowledge of specific data structures or
  
 ## Topics Covered
 
-#### [](data-types/ds-types.md#Physical%20Data%20Structures|Physical%20Data%20Structures)
+#### [ds-types](ds-types.md#Physical%20Data%20Structures|Physical%20Data%20Structures)
 
 - [Arrays](arrays.md)
 - [Matrices](matrcies)
 - [Linked Lists](linked-lists)
-#### [](data-types/ds-types.md#Logical%20Data%20Structures|Logical%20Data%20Structures)
+#### [ds-types](ds-types.md#Logical%20Data%20Structures|Logical%20Data%20Structures)
 
 - [Stack](stack-memory.md)
 - [Queues](queues)
