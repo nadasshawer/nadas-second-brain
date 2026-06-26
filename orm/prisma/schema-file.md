@@ -1,6 +1,11 @@
 ## `schema.prisma` 
 
 The `prisma/schema.prisma` file is the schema's blueprint.
+#### Create `schema.prisma` File
+
+```shell
+npx prisma init
+```
 #### Code Example
 
 ```prisma
@@ -27,7 +32,7 @@ model User {
   @@map("users")
 }
 ```
-#### Syntax
+#### Syntax Breakdown
 | Syntax               | Meaning                                               |
 | -------------------- | ----------------------------------------------------- |
 | `generator client`   | Where/how to generate the TS client                   |
@@ -40,4 +45,5 @@ model User {
 | `@updatedAt`         | Auto-update on row change                             |
 | `@map("created_at")` | DB column name (snake_case) vs field name (camelCase) |
 | `@@map("users")`     | Actual table name in Postgres                         |
+
 

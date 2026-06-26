@@ -1,6 +1,7 @@
 ## PostgreSQL Basics
 
-- **PostgreSQL** is a relational database; stores structured data in tables (rows and columns)
+**PostgreSQL** is a relational database; stores structured data in tables (rows and columns). It's often abbreviated as Postgres or PG.
+
 - Query language → **SQL** (Structured Query Language)
 - Strong choice when you need concurrent clients, background jobs, complex queries, and production-grade ACID guarantees
 #### Server vs Client
