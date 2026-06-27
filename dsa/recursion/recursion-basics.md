@@ -6,12 +6,12 @@
 1. Ascending phase (calling)
 2. Descending phase (returning)
 
-## Types Of Recursion
+## Types of Recursion
 
 1. [Tail Recursion](tail-recursion.md)
 2. [Head Recursion](head-recursion.md)
 3. [Tree Recursion](tree-recursion.md)
-4. [Indirect Recursion](indirect-recursion)
+4. [Indirect Recursion](indirect-recursion.md)
 5. [Nested Recursion](nested-recursion)
 
 ## The Stack
@@ -25,17 +25,27 @@ Every single time a function calls itself, a new **activation record** (also kno
 
 ```txt
 |===================================|
-|  fun2(0) Activation Record        | <- Current Top of Stack (Base case met! Returns)
+|  fun(Base Case) Frame             | <- CURRENT TOP OF STACK
+|  • Condition met (e.g., n == 0)   |    Triggers the halt! Returns a value,
+|  • Status: ACTIVE 🟢              |    collapsing this frame immediately.
 |-----------------------------------|
-|  fun2(1) Activation Record (n=1)  | <- Paused at line: printf("%d", n);
+|  fun(Last Step) Frame             | <- SUSPENDED FRAME
+|  • Status: PAUSED 🟡              |    Waiting for the Base Case above
+|  • Holds: Local data / Arguments  |    to return its value so it can finish.
 |-----------------------------------|
-|  fun2(2) Activation Record (n=2)  | <- Paused at line: printf("%d", n);
+|  ... More Paused Frames ...       | <- SUSPENDED FRAMES
+|  • Status: PAUSED 🟡              |    Each call stacks neatly on top of the
+|  • Holds: Local data / Arguments  |    previous one, allocating new memory.
 |-----------------------------------|
-|  fun2(3) Activation Record (n=3)  | <- Paused at line: printf("%d", n);
+|  fun(Initial Call) Frame          | <- THE ENTRY POINT
+|  • Status: PAUSED 🟡              |    The very first recursive call sparked
+|  • Holds: Original input data     |    by your driver code.
 |-----------------------------------|
-|  main() Activation Record         | <- Waiting for fun2(3) to finish
+|  main() / Global Execution Frame  | <- THE BASE LAYER
+|  • Status: PAUSED 🟡              |    Pushed first. Handed control over to 
+|  • Holds: Program entry variables |    the recursive function; waiting to resume.
 |===================================|
-         STACK MEMORY CHUNK
+           STACK (RAM)
 ```
 
 ## Time Complexity
